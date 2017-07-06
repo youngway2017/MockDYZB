@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MockDYZB
+//  sd
 //
 //  Created by yangwei on 06/07/2017.
 //  Copyright © 2017 victor. All rights reserved.
@@ -16,28 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let tabBarController = UITabBarController()
-        let child1 = UIViewController()
-        child1.view.backgroundColor = UIColor.blue
-        
-        let child2 = UIViewController()
-        child2.view.backgroundColor = UIColor.orange
-        
-        let child3 = UIViewController()
-        child3.view.backgroundColor = UIColor.gray
-        
-        let child4 = UIViewController()
-        child4.view.backgroundColor = UIColor.cyan
-        
-        let child5 = UIViewController()
-        child5.view.backgroundColor = UIColor.yellow
-        
-        tabBarController.viewControllers = [child1,child2,child3,child4,child5]
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = tabBarController
-        window?.makeKeyAndVisible()
-        
         return true
     }
 
