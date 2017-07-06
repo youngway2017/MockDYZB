@@ -12,6 +12,7 @@
 		442226411F0E261E00F0AB22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4422263F1F0E261E00F0AB22 /* Main.storyboard */; };
 		442226511F0E261E00F0AB22 /* MockDYZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442226501F0E261E00F0AB22 /* MockDYZBTests.swift */; };
 		4422265C1F0E261E00F0AB22 /* MockDYZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422265B1F0E261E00F0AB22 /* MockDYZBUITests.swift */; };
+		44C5F1011F0E518800FD47B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DAA6BD1F0E4C120074C4DF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C5F1011F0E518800FD47B1 /* Assets.xcassets in Resources */,
 				442226411F0E261E00F0AB22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,7 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = victor.MockDYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -494,7 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = victor.MockDYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
