@@ -12,24 +12,27 @@ class DYHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupNavigation()
+        
         view.backgroundColor = UIColor.white
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func setupNavigation() {
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(color: UIColor(hexRgb: 0xFF7700)), for: .default)
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "homeLogoIcon_61x29_")
+        
+        let historyBarButtonItem = UIBarButtonItem(imageName: "viewHistoryIcon_24x24_", highLightImageName: "viewHistoryIconHL_24x24_", size: CGSize(width: 30, height: 29))
+        
+        let newGameBarButtonItem = UIBarButtonItem(imageName: "home_newGameicon_24x24_", highLightImageName: "home_newGameicon_clicked_24x24_", size: CGSize(width: 30, height: 29))
+        
+        navigationItem.rightBarButtonItems = [historyBarButtonItem,newGameBarButtonItem]
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
-    */
-
+    
 }

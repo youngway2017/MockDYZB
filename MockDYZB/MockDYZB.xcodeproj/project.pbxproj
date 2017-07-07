@@ -14,6 +14,10 @@
 		441F878A1F0F5CB1005BE04B /* DYDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F87891F0F5CB1005BE04B /* DYDiscoveryViewController.swift */; };
 		441F878C1F0F5CBD005BE04B /* DYUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F878B1F0F5CBD005BE04B /* DYUserViewController.swift */; };
 		441F878F1F0F68F5005BE04B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F878E1F0F68F5005BE04B /* UIColor+Extension.swift */; };
+		441F87911F0F6F4C005BE04B /* DYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F87901F0F6F4C005BE04B /* DYNavigationController.swift */; };
+		441F87931F0F7E0A005BE04B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F87921F0F7E0A005BE04B /* UIImage+Extension.swift */; };
+		441F87951F0F8101005BE04B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F87941F0F8101005BE04B /* Common.swift */; };
+		441F87971F0F8813005BE04B /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F87961F0F8813005BE04B /* UIBarButtonItem+Extension.swift */; };
 		4422263C1F0E261E00F0AB22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422263B1F0E261E00F0AB22 /* AppDelegate.swift */; };
 		442226511F0E261E00F0AB22 /* MockDYZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442226501F0E261E00F0AB22 /* MockDYZBTests.swift */; };
 		4422265C1F0E261E00F0AB22 /* MockDYZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422265B1F0E261E00F0AB22 /* MockDYZBUITests.swift */; };
@@ -45,6 +49,10 @@
 		441F87891F0F5CB1005BE04B /* DYDiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYDiscoveryViewController.swift; sourceTree = "<group>"; };
 		441F878B1F0F5CBD005BE04B /* DYUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYUserViewController.swift; sourceTree = "<group>"; };
 		441F878E1F0F68F5005BE04B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		441F87901F0F6F4C005BE04B /* DYNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYNavigationController.swift; sourceTree = "<group>"; };
+		441F87921F0F7E0A005BE04B /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		441F87941F0F8101005BE04B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		441F87961F0F8813005BE04B /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		442226381F0E261E00F0AB22 /* MockDYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockDYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4422263B1F0E261E00F0AB22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442226471F0E261E00F0AB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -299,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				441F87811F0F3E44005BE04B /* DYTabBarController.swift */,
+				441F87901F0F6F4C005BE04B /* DYNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -328,6 +337,9 @@
 			isa = PBXGroup;
 			children = (
 				441F878E1F0F68F5005BE04B /* UIColor+Extension.swift */,
+				441F87921F0F7E0A005BE04B /* UIImage+Extension.swift */,
+				441F87961F0F8813005BE04B /* UIBarButtonItem+Extension.swift */,
+				441F87941F0F8101005BE04B /* Common.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -526,10 +538,14 @@
 			files = (
 				441F878A1F0F5CB1005BE04B /* DYDiscoveryViewController.swift in Sources */,
 				441F878C1F0F5CBD005BE04B /* DYUserViewController.swift in Sources */,
+				441F87911F0F6F4C005BE04B /* DYNavigationController.swift in Sources */,
 				441F87821F0F3E44005BE04B /* DYTabBarController.swift in Sources */,
+				441F87971F0F8813005BE04B /* UIBarButtonItem+Extension.swift in Sources */,
+				441F87951F0F8101005BE04B /* Common.swift in Sources */,
 				441F87881F0F5CA0005BE04B /* DYAttentionViewController.swift in Sources */,
 				4422263C1F0E261E00F0AB22 /* AppDelegate.swift in Sources */,
 				441F87861F0F5C84005BE04B /* DYNewLiveViewController.swift in Sources */,
+				441F87931F0F7E0A005BE04B /* UIImage+Extension.swift in Sources */,
 				441F87841F0F5C68005BE04B /* DYHomeViewController.swift in Sources */,
 				441F878F1F0F68F5005BE04B /* UIColor+Extension.swift in Sources */,
 			);

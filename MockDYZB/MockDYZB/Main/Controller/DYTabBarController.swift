@@ -9,7 +9,7 @@
 import UIKit
 
 class DYTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,13 +21,19 @@ class DYTabBarController: UITabBarController {
     
     private func setupViewControllers() {
         
-        tabBar.backgroundColor = UIColor(red: 251, green: 251, blue: 251, alpha: 1)
-
+        tabBar.backgroundColor = kThemeColor
         let homeController = DYHomeViewController()
         let newLiveController = DYNewLiveViewController()
         let attentionController = DYAttentionViewController()
         let discoverController = DYDiscoveryViewController()
         let userController = DYUserViewController()
+        
+        let homeNavControlloer = DYNavigationController(rootViewController: homeController)
+        let newLiveNavControlloer = DYNavigationController(rootViewController: newLiveController)
+        let attentionNavControlloer = DYNavigationController(rootViewController: attentionController)
+        let discoverNavControlloer = DYNavigationController(rootViewController: discoverController)
+        let userNavControlloer = DYNavigationController(rootViewController: userController)
+        
         
         homeController.tabBarItem.image = UIImage(named: "tabHome_24x24_")
         homeController.tabBarItem.selectedImage = UIImage(named: "tabHomeHL_24x24_")
@@ -50,7 +56,7 @@ class DYTabBarController: UITabBarController {
         discoverController.tabBarItem.title = "发现"
         userController.tabBarItem.title = "我的"
         
-        viewControllers = [homeController,newLiveController,attentionController,discoverController,userController]
+        viewControllers = [homeNavControlloer,newLiveNavControlloer,attentionNavControlloer,discoverNavControlloer,userNavControlloer]
     }
 
 }

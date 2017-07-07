@@ -8,38 +8,47 @@
 
 import UIKit
 
-extension UIColor {
-    convenience init(red: Int, green: Int, blue: Int) {
+public extension UIColor {
+    // MARK: - 便利构造函数
+    convenience init(red: CGFloat, green: CGFloat, blue: CGFloat) {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
         
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+        self.init(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: 1.0)
     }
     
-    convenience init(red: Int, green: Int, blue: Int, a: CGFloat = 1.0) {
+    convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, a: CGFloat = 1.0) {
         self.init(
-            red: CGFloat(red) / 255.0,
-            green: CGFloat(green) / 255.0,
-            blue: CGFloat(blue) / 255.0,
+            red: red / 255.0,
+            green: green / 255.0,
+            blue: blue / 255.0,
             alpha: a
         )
     }
     
     convenience init(hexRgb: Int) {
         self.init(
-            red: (hexRgb >> 16) & 0xFF,
-            green: (hexRgb >> 8) & 0xFF,
-            blue: hexRgb & 0xFF
+            red: CGFloat((hexRgb >> 16) & 0xFF),
+            green: CGFloat((hexRgb >> 8) & 0xFF),
+            blue: CGFloat(hexRgb & 0xFF)
         )
     }
     
     convenience init(hexRgb: Int, a: CGFloat = 1.0) {
         self.init(
-            red: (hexRgb >> 16) & 0xFF,
-            green: (hexRgb >> 8) & 0xFF,
-            blue: hexRgb & 0xFF,
+            red: CGFloat((hexRgb >> 16) & 0xFF),
+            green: CGFloat((hexRgb >> 8) & 0xFF),
+            blue: CGFloat(hexRgb & 0xFF),
             a: a
         )
+    }
+    
+    // MARK: - 类方法，生成随机色
+    class func randomColor() -> UIColor {
+        let red = CGFloat(arc4random() % 255)
+        let green = CGFloat(arc4random() % 255)
+        let blue = CGFloat(arc4random() % 255)
+        return UIColor(red: red, green: green, blue: blue)
     }
 }
